@@ -1,0 +1,96 @@
+User = input("name:")
+Password = input("Pass_word:")
+User_name = ["Lilly","Liah","Lijo"]
+Pass = ["apple","banana","onion"]
+if(User in User_name and Password in Pass):
+    print("Registered User")
+else:
+    print("New-User registration")
+# New-user registration
+    
+    
+    userguess = input('User Name:')
+    User_name.append(userguess)
+    passwordguess = input('Password:')
+    Pass.append(passwordguess)
+    phonenumberguess = int(input('Phone Number:'))
+    countryguess = input('Country:')
+    pincodeguess = int(input('Pincode:'))  
+    print("Successfuly created the account")
+    exit()
+      
+#Login to the page
+
+User = input("User Name:")
+Password = input("Password:")
+print(User_name)
+if (User in User_name and Password in Pass):
+  print("Successfully Logged In")
+else:
+  print("Incorrect User-name or Password")
+
+#source,destination,type of bus,seat type,doj,timing ,no.of persons,pricing,Person details
+# Source and destination
+def Source():  
+  Source = input ("Source:")
+  Destination = input("Destination:")
+  Source_list = ["Chennai"]
+  Destination_list = ["Bangalore","Kerala","Hyderabad"]
+  if Source in Source_list and Destination in Destination_list:
+    print("Source and destination is:"+ Source +  " and " + Destination)
+  else:
+    print("The source and destination is out of the application")
+Source()
+
+# Type of Bus
+def Bus():
+  BusVariant = input("Bus Type:")
+  Bus_Type = ("Sleeper","Semi-Sleeper")
+  if BusVariant in Bus_Type:
+    print("The Bus that you wished for travel is:"+ BusVariant)
+  else:
+    print("Out of the box")
+Bus()
+
+#Seat type and seat number
+def my_seattype():
+  Seat_number = input("Seat Number:")
+  my_seattype = input("Seat Type:")
+  SeatType = ("Upper","Lower")
+  if my_seattype in SeatType:
+    print("Your Seat Type and Seat Number is:" + Seat_number + " and " + my_seattype)
+  else:
+    print("No Allotment")
+my_seattype()
+
+#Date Of Journey
+def Journey():
+  from datetime import datetime
+  date_string = input("Enter date and time of Journey:")
+  format = '%Y-%m-%d %H:%M %p'
+  Session = input("Enter the Session:")
+  List = ['AM','PM']
+  if Session in List:
+    my_date = datetime.strptime(date_string, format)
+
+
+# This prints '2009-11-29 03:17 AM'
+    print ("The Journey date and time is:",my_date,Session)
+
+Journey()
+
+# Ticket Cost
+
+import math as M
+NoOfPersons = int(input("Enter the No.of persons:"))
+  
+TicketCost = (NoOfPersons * 1050)
+print("The ticket value is:",TicketCost)
+
+
+#Booked tickets successfully
+print("Thank you your Ticket is successfully booked!!!!!!1")
+print("Have a Happy and Safe Journey!!!!")
+
+
+  
